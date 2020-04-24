@@ -1,0 +1,42 @@
+.banner {
+    background: url(../img/cover.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    position: relative;
+    .banner__content--item {
+        position: absolute;
+        top: 50%;
+        width: 35%;
+        transform: translateY(-50%);
+        color: $color-white-0;
+        h3 {
+            font-size: $fs-4;
+            font-weight: $fw-bold-0;
+            margin-bottom: $mg-1 + 5;
+        }
+        p {
+            font-size: $fs-2 - 2;
+            color: $color-white-0;
+        }
+    }
+    .searchForm {
+        .input-group {
+            input[type=text] {
+                font-size: $fs-2;
+                font-weight: 100;
+            }
+            .form-control {
+                border: none;
+            }
+            .input-group-append {
+                .input-group-text {
+                    border: none;
+                    background-color: $color-white-0;
+                    color: $color-red-0;
+                    font-size: $fs-2 - 2;
+                }
+            }
+        }
+    }
+}

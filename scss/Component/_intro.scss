@@ -1,0 +1,31 @@
+.intro {
+    background: -webkit-linear-gradient(-45deg, $color-purple 0%, $color-red-0 100%);
+    .intro__wrapper {
+        .intro__content {
+            display: flex;
+            justify-content: space-between;
+            padding: $pd-1 0;
+            .intro__content--item {
+                display: flex;
+                color: $color-white-0;
+                align-items: center;
+                .intro__icon {
+                    font-size: $fs-4 + 8;
+                    margin-right: $mg-1;
+                }
+                .intro__text {
+                    margin: 0;
+                    font-weight: $fw-bold-0;
+                    .intro__text--heading {
+                        font-size: $fs-1 + 4;
+                        margin: 0;
+                    }
+                    .intro__text--title {
+                        margin: 0;
+                        font-weight: $fw-normal;
+                    }
+                }
+            }
+        }
+    }
+}

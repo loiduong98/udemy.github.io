@@ -1,0 +1,22 @@
+.btn-udemyWhite {
+    //SASS
+    @include styleButton($color-gray-4,$color-white-0,$color-black-0,$pd-1 + 1,$pd-1 + 2);
+    //  // C1
+    // &:hover {
+    //      @include styleButton
+    // }
+    // C3
+    
+    &:hover {
+        @include styleHoverButton ($color-black-0,$color-white-0,$color-black-0);
+    }
+}
+
+.btn-udemyRed {
+    //SASS
+    @include styleButton($color-white-0,$color-red-0,transparent,$pd-1 + 1,$pd-1 + 2);
+
+    &:hover {
+        @include styleHoverButton ($color-white-0,$color-red-2,transparent);
+    }
+}

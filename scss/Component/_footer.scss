@@ -1,0 +1,75 @@
+footer {
+    font-size: $fs-1;
+    border-bottom: 5px solid $color-red-0;
+    .footer__wrapper {
+        .footer__content {
+            padding: $pd-2 + 10 0px $pd-2 0px;
+            border-bottom: 1px solid $color-gray-6;
+            .about {
+                .list-item {
+                    .about-item {
+                        list-style: none;
+                        padding: $pd-1 - 5;
+                        a {
+                            color: $color-blue;
+                            text-decoration: none;
+                        }
+                    }
+                    .about-item.high {
+                        font-weight: $fw-bold;
+                        a:hover {
+                            color: $color-black-0;
+                        }
+                    }
+                }
+            }
+            .selectlan {
+                padding: $pd-1 $pd-5;
+                color: $color-gray-4;
+                background-color: $color-white-0;
+                border: 1px solid $color-gray-4;
+                margin-left: $mg-8 + 30;
+            }
+        }
+        .copyright {
+            padding: 30px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .copy-left {
+                display: flex;
+                align-items: center;
+                .udemy-logo {
+                    padding-right: $pd-2;
+                    img {
+                        width: 100px;
+                        height: 35px;
+                    }
+                }
+                .copy-text {
+                    p {
+                        color: $color-gray-4;
+                        margin: 0;
+                    }
+                }
+            }
+            .copy-right {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    li {
+                        list-style: none;
+                        padding-left: 20px;
+                        a {
+                            text-decoration: none;
+                            color: $color-blue;
+                            &:hover {
+                                color: $color-black-0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

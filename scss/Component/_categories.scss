@@ -1,0 +1,28 @@
+.categories {
+    .cate__wrapper {
+        padding: $pd-2 + 10 0px;
+        h3 {
+            font-size: $fs-3;
+            font-weight: $fw-bold;
+        }
+        .cate__content {
+            .cate__item {
+                width: 265px;
+                margin: 5px;
+                padding: $pd-1 + 5 $pd-1 + 5 $pd-1 - 5;
+                box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+                a {
+                    text-decoration: none;
+                    color: $color-black-light;
+                    p {
+                        font-size: $fs-1 + 2;
+                    }
+                    i {
+                        font-size: $fs-2 + 8;
+                        padding-right: $pd-1;
+                    }
+                }
+            }
+        }
+    }
+}

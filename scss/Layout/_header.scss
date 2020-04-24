@@ -1,0 +1,76 @@
+.header__left {
+    display: flex;
+    align-items: center;
+    color: $color-black-0;
+    .navbar-brand {
+        flex-grow: 1;
+        img {
+            width: 110px;
+            height: 32px;
+        }
+    }
+    
+
+    .header__categories {
+        flex-grow: 1;
+        @include styleText($fs-1,$fw-normal,$color-black-light);
+    }
+
+    .searchForm {
+        flex-grow: 5;
+        .input-group {
+            background-color: $color-white-cream;
+            color: $color-black-0;
+            border: 1px solid $color-white-cream;
+            .form-control {
+                background-color: transparent;
+                border: 1px solid transparent;
+                &:focus {
+                    box-shadow: none;
+                    background-color: $color-white-0;
+                    border: 1px solid $color-gray-6;
+                    border-right: transparent;
+
+                    &+.input-group-append .input-group-text{
+                        border-bottom: 1px solid $color-gray-6;
+                        border-top: 1px solid $color-gray-6;
+                        border-right: 1px solid $color-gray-6;
+                        
+                        &:hover {
+                            color: $color-white-0;
+                            background-color: $color-red-0;
+                            border: $color-red-0;
+                        }
+                    }
+                }
+            }
+            .input-group-text {
+                background-color: transparent;
+                border: 1px solid transparent;
+                border-radius: 0;
+                
+
+                &:hover {
+                    color: $color-white-0;
+                    background-color: $color-red-0;
+                    border: $color-red-0;
+                }
+                
+            }
+        }
+    }
+}
+.header__right {
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                @include styleText($fs-1,$fw-normal,$color-black-light); 
+            }
+        }
+    }  
+    @include responsive('large'){
+        .header__business,.header__teach {
+            display: none;
+        }
+    }      
+}
